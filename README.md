@@ -6,6 +6,23 @@ And I have created a lambda function for lambda_function.py file.
 
 After the data goes to the S3 bucket we use Snowflake for automated ingestion, storage and transformation.
 
+## APIs Used
+
+
+## FDA Drug Event API
+
+URL: https://api.fda.gov/drug/event.json?limit=100
+Description: Provides adverse drug event reports from the FDA database.
+Format: JSON
+
+
+
+## NYC Motor Vehicle Collisions API
+
+URL: https://data.cityofnewyork.us/resource/h9gi-nx95.csv
+Description: Contains data on motor vehicle collisions in New York City.
+Format: CSV
+
 ## I have attached following Screenshots.
 
 
@@ -15,3 +32,4 @@ After the data goes to the S3 bucket we use Snowflake for automated ingestion, s
 4. and 5. Screenshot of the transformed view of both the json files
 6. Transformed View
 7. and 8. Raw Data
+
