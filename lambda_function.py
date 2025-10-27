@@ -6,7 +6,7 @@ from io import StringIO
 
 # Configure your AWS credentials via environment variables or IAM role in Lambda
 s3_client = boto3.client('s3')
-BUCKET_NAME = 'your-s3-bucket-name'
+BUCKET_NAME = 'harshit-data-pipeline-bucket'
 
 def process_and_upload(data_type, dataset_url, s3_key_prefix):
     """
@@ -49,5 +49,6 @@ def lambda_handler(event, context):
 
     for ds in datasets:
         process_and_upload(ds["type"], ds["url"], ds["prefix"])
+
 
     return {"status": "success", "message": "All datasets processed and uploaded."}
